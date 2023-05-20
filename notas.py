@@ -38,5 +38,9 @@ definiciones de esquemas permiten realizar cambios de manera controlada y predec
 ^ SDK
 conjunto de herramientas, bibliotecas, documentación y ejemplos de código, compiladores, depuradores, emuladores, herramientas de prueba y más. que facilitan el desarrollo de aplicaciones para una plataforma específica. SDK está diseñado para trabajar con un sistema operativo, una plataforma de hardware o un entorno de desarrollo específico.
 
+^ $ curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN'  https://api.mercadolibre.com/users/me
+El signo "$" al inicio de una variable en la línea de comandos de Linux o Unix se utiliza para indicar que se trata de una variable de entorno. En el ejemplo que proporcionaste, "$ACCESS_TOKEN" es una variable de entorno que almacena un token de acceso.
+Cuando se ejecuta el comando en la terminal, el sistema operativo reemplaza "$ACCESS_TOKEN" con el valor real almacenado en la variable de entorno antes de ejecutar la solicitud CURL. Por lo tanto, se debe quitar el signo "$" para que CURL interprete correctamente el valor de la variable de entorno y lo incluya en la solicitud 
+
 
 """
