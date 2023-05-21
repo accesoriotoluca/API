@@ -1,20 +1,25 @@
-from tabulate import tabulate
-import requests
-import datos
+import requests, datos
 
-url = "https://api.mercadolibre.com/users/me"
+h = {'Content-type': 'application/json','Authorization': f'Bearer {datos.ACCESS_TOKEN}'}
+d = {'site_id=MLM',}
+
+r = requests.request('POST','https://api.mercadolibre.com/users/test_user',headers=h,data=d).json()
+print(r)
+
+
+import requests
+import json
+
+url = "https://api.mercadolibre.com/users/test_user"
+
+payload = json.dumps({
+  "site_id": "MLM"
+})
+
 headers = {
-    "Authorization": f"Bearer {datos.ACCESS_TOKEN}"
+  'Authorization': 'Bearer APP_USR-6726018526982523-052103-493143c22dd93117eef7c03b503d78be-721673001',
+  'Content-type': 'application/json'
 }
 
-response = requests.get(url, headers=headers)
-
-# Verificar el código de respuesta
-if response.status_code == 200:
-    data = response.json()
-    # Aquí puedes procesar la respuesta como desees
-    print(data)
-else:
-    print("Error en la solicitud:", response.status_code)
-
-
+response = requests.request("POST", url, headers=headers, data=payload)
+print(response.text)
