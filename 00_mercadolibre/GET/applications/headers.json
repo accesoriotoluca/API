@@ -1,0 +1,18 @@
+{
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "1162",
+    "Connection": "keep-alive",
+    "Date": "Mon, 22 May 2023 03:42:56 GMT",
+    "X-Content-Type-Options": "nosniff",
+    "X-Request-Id": "055f720f-cc98-4d4e-aaca-531945f7827c",
+    "X-Frame-Options": "DENY",
+    "X-XSS-Protection": "1; mode=block",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Access-Control-Allow-Methods": "PUT, GET, POST, DELETE, OPTIONS",
+    "Access-Control-Max-Age": "86400",
+    "X-Cache": "Miss from cloudfront",
+    "Via": "1.1 4217915f7049e3fa3cdc67c8b1a7a062.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Pop": "QRO51-P1",
+    "X-Amz-Cf-Id": "4shJviMkPh8XOUsg2lz-xJgXfHjZ-MSptbdrFZoTMCvZvsA9PdVriw=="
+}
